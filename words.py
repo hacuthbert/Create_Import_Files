@@ -1,7 +1,10 @@
 """Retrieve and print words from a URL.
 
 Usage:
-    python3 cmd_args.py <URL>
+    python3 words.py <URL>
+
+Example:
+    python3 words.py http://sixty-north.com/c/t.txt
 """
 import sys
 from urllib.request import urlopen
@@ -34,7 +37,7 @@ def print_words(items):
     for item in items:
         print(item)
 
-def main(url):
+def main(url='http://sixty-north.com/c/t.txt'):
     """Print each word from a text document from at a URL.
     
         Args:
